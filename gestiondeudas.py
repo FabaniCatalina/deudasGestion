@@ -1,3 +1,7 @@
+'''Creamos las variables de listas vacias, que luego se van a completar con los inquilinos,
+el archivo,el archivo con lineas una abajo de la otra para poder trabajar mejor.Tambien cremos un diccionario vacio para 
+poder completarlo con las deudas dependiendo de la fecha en que se realicen'''
+
 l_inquilinos=[]
 archivo_entero=[]
 archivo_lineas=[]
@@ -22,6 +26,9 @@ print (archivo_lineas)
 
 def interpretacion (archivo_lineas):
     for i in archivo_lineas:
-        paso=archivo_lineas.pop(i)
-        caso=paso.split(" ")
-        fecha=caso.pop(0)
+        paso = archivo_lineas.pop(i)
+        division = paso.split(" ")
+        for p in range(len(l_inquilinos)):
+            año,mes,dia = division[0]
+            if año == 2022:
+                print("2")
