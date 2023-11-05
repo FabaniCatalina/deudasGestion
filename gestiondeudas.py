@@ -7,12 +7,17 @@ archivo_entero=[]
 archivo_lineas=[]
 inqui=[]
 orden={}
+nuevo = {}
 def inquilinos (nombre):
     with open (nombre, "r", encoding="utf8") as archivo:
         archivo_entero= archivo.read()
         archivo_lineas= archivo_entero.split("\n")
         inqui=archivo_lineas.pop(0)
         l_inquilinos=inqui.split(" ")
+    #for i in archivo_lineas:
+     #   if i 
+
+         
     return l_inquilinos
 
 var1=input("Ingrese el nombre del archivo a analizar: ")
