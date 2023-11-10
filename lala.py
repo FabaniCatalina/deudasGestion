@@ -7,11 +7,11 @@ with open ("transacciones_simple.txt", "r", encoding="utf8") as archivo:
     x=0
     n=len(lineas)-1
     print(n)
-    while x<n:
+    for i in lineas:
         anali=lineas.pop(x)
         #print(anali)
         partes=anali.split(" ")
-        #print(partes)
+        print(partes)
         if partes[1]=="*":
             inquilinos.append(partes[2])
         else:
